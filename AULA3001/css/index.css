@@ -1,0 +1,145 @@
+:root {
+    --cor-fundo-pagina: #0b1220;
+    --cor-fundo-cartao: #111827;
+    --cor-fundo-principal: #e5e7eb;
+    --cor-texto-suave: #9ca3af;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     font-family: 'Roboto', 'Arial';
+     color: var(--cor-texto-principal);
+     background: var(--cor-fundo-pagina);
+}
+.container-pagina{
+    width: min(1100PX, 90%);
+    margin: 0 auto;
+}
+.cabecalho-principal{
+    min-height: 70vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #0ea5e9 0%, #111827);
+    padding: clamp(2rem, 5vw, 5rem);
+}
+.box {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  border-radius: 5px;
+  padding: 10px;
+}
+  .p1-no-synthesis {
+  font-style: italic;
+  font-synthesis: none;
+}
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+.meu-paragrafo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.cabecalho-principal__titulo {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cabecalho-principal__subtitulo {
+    color: #e5e7eb;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+
+.formulario-inscicao {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario-inscicao__campo-email {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    width: 260px;
+    font-size: 1rem;
+}
+
+.botao {
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao--primario {
+    background: #0ea5e9;
+    color: white;
+}
+
+.botao--primario:hover {
+    background: #0284c7;
+}
+
+
+.secao-empresa {
+    background: #0b1220;
+    padding: 5rem 0;
+}
+
+.empresa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* CARD */
+.empresa-card {
+    background: var(--cor-fundo-cartao);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.empresa-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.empresa-card img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.empresa-card h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.empresa-card p {
+    color: var(--cor-texto-suave);
+    font-size: 0.95rem;
+}
+
+
+.rodape {
+    background: #020617;
+    padding: 2rem;
+    text-align: center;
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+}
